@@ -1,0 +1,16 @@
+{
+  "name": "coucoudas-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
