@@ -13,10 +13,10 @@ module.exports  = (app) => {
     return res.json(cou);
   });
 
-  app.delete('/cou/:couId', async (req, res) => {
+  app.delete('/cou/:id', async (req, res) => {
     const { id } = req.params;
 
-    await Cou.remove({ id });
+    await Cou.remove({ _id: id });
     return res.json({
       removedId: id,
       result: 'ok'

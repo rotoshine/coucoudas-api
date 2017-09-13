@@ -10,7 +10,7 @@ const startup = async () => {
     return mongoose.connect('mongodb://localhost/coucoudas', {
       useMongoClient: true
     });
-  }
+  };
 
   await connect(); 
   require('./models/Cou');
@@ -33,7 +33,7 @@ const startup = async () => {
   app.listen(PORT);
   
   console.log(`server ${PORT} port listening.`);
-}
+};
 
 
 startup();
